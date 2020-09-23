@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 25%;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.top_button {background-color: #4CAF50; float: top; margin-left: 100px} /* Green */
+.left_button {background-color: #0CAFFF; float: left;} /* Green */
+.right_button {background-color: #f44336; margin-left: 25px} /* Green */
+.bottom_button {background-color: #008CBA; float: bottom; margin-left: 100px} /* Blue */
+</style>
+</head>
+<body>
+
+  <form method="POST" action="/">
+    <button class="button top_button" type="submit" id="top_led_button" value="top_led_button" name="top_led_button">TOPP</button><br>
+    <button class="button left_button" type="submit" id="left_led_button" value="left_led_button" name="left_led_button">LEFT</button>
+    <button class="button right_button" type="submit" id="right_led_button" value="right_led_button" name="right_led_button">RIGHT</button><br>
+    <button class="button bottom_button" type="submit" id="bottom_led_button" value="bottom_led_button" name="bottom_led_button">BOTTOM</button>
+  </form>
+</body>
+</html>
