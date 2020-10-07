@@ -1,7 +1,7 @@
 import Adafruit_BBIO.GPIO as GPIO
 from time import sleep
 
-LED_Top = "P9_11"
+LED_Top = "P8_10"
 LED_Bottom = "P9_12"
 
 GPIO.setup(LED_Top, GPIO.OUT)
