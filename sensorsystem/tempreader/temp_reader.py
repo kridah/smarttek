@@ -1,6 +1,5 @@
 import Adafruit_BBIO.ADC as ADC
 
-# Temperature = ((Vout in mV) – 500mV) / 10
 # https://elinux.org/EBC_Exercise_31_Dallas_1-Wire
 
 ADC.setup()

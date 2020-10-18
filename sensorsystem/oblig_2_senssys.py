@@ -1,6 +1,5 @@
 import Adafruit_BBIO.ADC as ADC
-from time import sleep
-# BPM = 60 * Fsampling / sampling_periods with Fsampling
+
 # måler temperatur ca hvert 0.8 sekund
 from datetime import datetime
 
