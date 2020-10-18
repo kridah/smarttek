@@ -26,3 +26,9 @@ sensoren er følsom i forhold til trykk, lysforhold og temperatur (i fingeren).
 Av vedlagt graf teller jeg 18 bølgetopper i tidsintervallet 20 sekunder. Det gir en anslått plus på 54 slag i minuttet.
 Om ikke helt nøyaktig, så er det absolutt innen rekkevidde. Min normale hvilepuls ligger i spektret 60 - 80 bpm.
 
+## Puls og temperatur
+Et godt og nøyaktig oppsett med måling fra fotopletysmograf og temperatursensor viser seg å være vanskeligere å få til
+ enn man skulle tro. Det kommer blant annet av at det tar tid før man får lest data fra temperatursensoren, rundt 0,8 sekunder.
+ Det gjør det vanskeligere å få hyppige målinger med fotopletysmografen, noe som er nødvendig for gode data. 
+ Klarer derfor ikke å lese ut puls fra data i temp_and_hr.png
+ 
