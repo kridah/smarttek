@@ -8,7 +8,7 @@ ADC.setup()
 sensor_path = "/sys/class/hwmon/hwmon0/temp1_input"
 timestamp = datetime.now().timestamp()
 while True:
-    ADC.read("P9_40")
+   # hr =  (ADC.read("P9_40") * 4096) / 1.8
     with open(sensor_path, 'r') as file:
         for temp in file:
             # skriv ut tid $1 (x) og motstand ($2) (y), temperatur ($3) (y)
