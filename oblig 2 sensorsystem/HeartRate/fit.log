@@ -1,0 +1,31 @@
+
+
+*******************************************************************************
+Fri Oct  9 15:36:11 2020
+
+
+FIT:    data read from "hr.csv" u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 10.0000]
+        #datapoints = 200
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = mean_y
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   mean_y       
+   0 1.8004391000e+07   0.00e+00  1.00e+00    1.000000e+00
+   3 1.9075500000e+02  -5.84e-04  1.00e-03    3.010350e+02
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 190.755
+rel. change during last iteration : -5.83986e-09
+
+degrees of freedom    (FIT_NDF)                        : 199
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.979065
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.958568
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+mean_y          = 301.035          +/- 0.06923      (0.023%)

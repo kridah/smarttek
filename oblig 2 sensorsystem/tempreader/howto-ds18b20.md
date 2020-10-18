@@ -40,6 +40,7 @@ less-kommandoen skriver ut innholdet i dts-skriptet.
 
 Rediger så filen /boot/uEnv.txt med Nano, vi eller lignende.
 ```sh
+# Du må ha administrative rettigheter, så bruk eventuelt sudo
 nano /boot/uEnv.txt
 # Finn linjen med #uboot_overlay_addr4=/lib/firmware/<file0>.dtbo
 # Endre til. Husk å fjerne # foran for å avkommentere linjen.
@@ -50,3 +51,25 @@ Start beaglebone på nytt.
 ```sh
 sudo reboot
 ```
+
+Koble til Beaglebone igjen via terminal.
+```sh
+cd /sys/class/hwmon
+```
+Du bør få minst et oppslag her på hwmon0 eller hwmonX
+Hvis du har flere, så må vi se hvilken av dem som har en temperaturmåler.
+```sh
+cat */name 
+```
+w1_slave_temp er det vi ser etter.
+Gå inn i mappen hvor w1_slave_temp ligger.
+
+Vis alle filene i mappen, og les av temperaturmåleren.
+```sh 
+cd hwmon0
+ls
+cat temp1_input
+```
+
+Utskriften gir et tall. Dette er den aktuell temperaturen, ganget med tusen.
+Det er alt du trenger for å lese temperaturen. 
