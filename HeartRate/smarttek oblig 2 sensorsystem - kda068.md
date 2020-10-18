@@ -3,16 +3,21 @@
  -- Kristoffer Dahl - kda068 --
  
 ## Fotopleytsmograf
-@fil: hr_reader.py
+@kodefil: hr_reader.py\
+@bildefil: average_multi.png\
 I denne oppgaven har jeg satt opp en fotopletysmograf (sensoren) hvis formål er å måle endringer i 
 fargene gitt i "bloodvessels" i fingeren. 
 Når man starter programmet leses spenningsforskjellen sensoren avgir. I mine målinger er forskjellen 
-mellom høy og lav ca 1.0 [179.5 - 180.5]. I vedlagt bildefil, average.png, er det gjort en måling over 20 sekunder.
+mellom høy og lav i beregnet gjennomsnitt ca 1.0 [179.5 - 180.5].
+ 
+I vedlagt bildefil, average_multi.png, er det gjort en måling over 20 sekunder.
 Programmet skriver ut to datafelt. Tid og spenning separert med komma. Dette lagres i en csv-fil.
-Det gjøres måling 10 ganger i sekundet.
+Det gjøres måling circa 10 ganger i sekundet, gitt ved at sleep(0.1) 
+Ved å ta gjennomsnittet reduseres variasjonen mellom bølgetopp og -bunn, samtidig som antall topper og bunner blir mindre. 
+Ut fra det tolker jeg det slik at gjennomsnittet fungerer som et filter som tar bort unøyaktigheter i målingene.
 
-Gnuplot-skriptet average.gp tar dataene fra csv.filen produsert av hr_reader. 
-Det beregnes et gjennomsnitt gitt hver femte måling, og videre lages en ny graf.
+Gnuplot-skriptet average.gp tar dataene fra csv-filen produsert av utskriften for hr_reader.py og plotter to datafelt.
+Grønn linje viser rådata, mens rød linje viser et gjennomsnitt for hver femte måling.
 
 ## Graf og puls
 For å finne puls ser jeg på topper i grafen. Med topper mener jeg punkter i grafen som kommer etter 
